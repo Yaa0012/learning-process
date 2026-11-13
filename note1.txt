@@ -1,0 +1,13 @@
+cd ~/桌面/leaning\text/
+git init    #初次使用
+git add .
+git commit -m "注释"
+git remote add origin -----
+git push -u origin master
+头文件 #include<iostream>  
+       #include<opencv2/opencv.hpp>
+cmake_minimum_required(VERSION 3.0)
+project(MyVisionProject)
+find_package(OpenCV REQUIRED)
+add_executable(my_app main1.cpp) 
+target_link_libraries(my_app ${OpenCV_LIBS})
